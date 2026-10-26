@@ -7,10 +7,10 @@ public class BankMini {
         // Membuat object Rekening (nomor 001, pemilik Ani, saldo awal 100.000)
         Rekening rekening = new Rekening("001", "Ani", 100000);
 
-        // Ketentuan 7: Tulis rekening.saldo = 1000000; lalu ambil pesan error-nya ke komentar
-        // Pesan error saat dijalankan:
-        // "java: saldo has private access in Rekening"
-        // rekening.saldo = 1000000; // Dikomen agar program bisa di-compile kembali
+        // Ketentuan 7: Mencoba akses field private secara langsung
+// Jika baris di bawah ini di-uncomment, akan muncul error:
+// java: saldo has private access in Rekening
+// rekening.saldo = 1000000;
 
         System.out.println("============ BANK MINI ============");
         System.out.print("Rekening " );
